@@ -4,7 +4,7 @@ body{
 
 .wrapper{
     width: 100px;
-    height: 50px;
+    height: 100px;
     background-color: red;
 
     /* transform: rotate(45deg); */
@@ -25,22 +25,28 @@ body{
     /* transform: skewY(50deg); */
     /* transform: skew(25deg, 20deg); */
 
-    transition-duration: 0.1s;
+    /* transition-duration: 0.1s; */
     /* transition-property: background-color; */
     /* transition-timing-function: ease-in-out; */
+    transition: all 1s ease-in;
 }
 
-.wrapper:hover ~ p{
+/* .wrapper:hover ~ p{
     transform: scale(1.1);
     color: white;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .wrapper:hover + p{
     transform: scale(1);
-    /* background-color: blue; */
-}
+    background-color: blue;
+} */
 
+.wrapper:hover{
+    /* transform: rotateY(90deg); */
+    transform-origin: bottom right;
+    transform: rotate(30deg);
+}
 
 
 h1, p{
